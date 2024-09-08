@@ -7,7 +7,7 @@ interface Props {
   Description: string;
 }
 
-const Card = ({ ImageLink, CompanyName, Price, Description }: Props) => {
+const Card : React.FC<Props> = ({ ImageLink, CompanyName, Price, Description }) => {
   return (
     <div className="">
       <img
